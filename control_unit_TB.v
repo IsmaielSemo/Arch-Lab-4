@@ -26,33 +26,21 @@ ControlUnit CU (
 
 initial begin
 
-    $display("Time\tInst\tBranch MemRead MemtoReg ALUOp MemWrite ALUSrc RegWrite");
-
-
+ 
     Inst = 5'b01100;  // R-Format opcode
     #10;
-    $display("%0t\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b", $time, Inst, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);
-
-   
+    
     Inst = 5'b00000;  // LW opcode
     #10; 
-    $display("%0t\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b", $time, Inst, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);
-
-   
+    
     Inst = 5'b01000;  
     #10; 
-    $display("%0t\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b", $time, Inst, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);
-
 
     Inst = 5'b11000;  // BEQ opcode
     #10; 
-    $display("%0t\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b", $time, Inst, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);
-
 
     Inst = 5'b11111;  // Unknown opcode
     #10; 
-    $display("%0t\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b", $time, Inst, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);
-
     
     $finish;
 end
