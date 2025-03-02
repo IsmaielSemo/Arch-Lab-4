@@ -45,7 +45,7 @@ always @(*) begin
         5'b01000: begin  
             Branch = 0;
             MemRead = 0;
-            MemtoReg = 0;   
+            MemtoReg = 1'bx;   
             ALUOp = 2'b00;  
             MemWrite = 1;    
             ALUSrc = 1;     
@@ -55,7 +55,7 @@ always @(*) begin
         5'b11000: begin  
             Branch = 1;  
             MemRead = 0;
-            MemtoReg = 0;    
+            MemtoReg = 1'bx;    
             ALUOp = 2'b01;   
             MemWrite = 0;
             ALUSrc = 0;      
