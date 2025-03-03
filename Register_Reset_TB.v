@@ -52,11 +52,7 @@ module tb_RegisterFile;
         #10 read_addr1 = 5'b00010;  
         #10 read_addr2 = 5'b00000;  
         
-      
-        #10 $display("Read Data 1: %h", read_data1);
-        #10 $display("Read Data 2: %h", read_data2);
-        
-        
-        #10 $finish;
+    
+ 
     end
 endmodule
