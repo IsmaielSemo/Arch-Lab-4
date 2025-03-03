@@ -41,8 +41,7 @@ initial begin
 
     Inst = 5'b11111;  // Unknown opcode
     #10; 
-    
-    $finish;
+  
 end
 
 endmodule
