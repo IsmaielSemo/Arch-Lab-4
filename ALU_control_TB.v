@@ -37,7 +37,7 @@ initial begin
  
     ALUOp = 2'b10; Inst_14_12 = 3'b110; Inst_30 = 1'b0; #10;
  
-    $finish;
+
 end
 
 endmodule
